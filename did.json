@@ -2,26 +2,26 @@
   "@context": [
     "https://www.w3.org/ns/did/v1"
   ],
-  "id": "did:web:sneha-kolimi.github.io",
+  "id": "did:web:smartfalcon-io.github.io",
   "verificationMethod": [
     {
-      "id": "did:web:sneha-kolimi.github.io#key-1",
+      "id": "did:web:smartfalcon-io.github.io#key-1",
       "type": "Ed25519VerificationKey2018",
-      "controller": "did:web:sneha-kolimi.github.io",
+      "controller": "did:web:smartfalcon-io.github.io",
       "publicKeyBase58": "9GQhGmeqqhMHvWLv3AHwjQRC67n3gjApVMuv1Dvij6og"
     }
   ],
   "authentication": [
-    "did:web:sneha-kolimi.github.io#key-1"
+    "did:web:smartfalcon-io.github.io#key-1"
   ],
   "assertionMethod": [
-    "did:web:sneha-kolimi.github.io#key-1"
+    "did:web:smartfalcon-io.github.io#key-1"
   ],
   "service": [
     {
-      "id": "did:web:sneha-kolimi.github.io#agent",
+      "id": "did:web:smartfalcon-io.github.io#agent",
       "type": "agent",
-      "serviceEndpoint": "https://sneha-kolimi.github.io/endpoint"
+      "serviceEndpoint": "https://smartfalcon-io.github.io/endpoint"
     }
   ]
 }
