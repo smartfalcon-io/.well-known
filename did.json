@@ -8,7 +8,7 @@
       "id": "did:web:smartfalcon-io.github.io#key-1",
       "type": "Ed25519VerificationKey2018",
       "controller": "did:web:smartfalcon-io.github.io",
-      "publicKeyBase58": "3F75HfPijAi2w5Rd8qpj6gddxnbHGQE6esyao9yRHBDv"
+      "publicKeyBase58": "ATQxuuYxtkevvY9N8u8Ry22jYdp3aLRUBGXH6RWrGPUK"
     }
   ],
   "authentication": [
