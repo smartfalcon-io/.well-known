@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@version": 1.1,
+
+    "SecondLifeBattery": "https://example.com/second-life#SecondLifeBattery",
+
+    "battery_passport_id": "https://example.com/second-life#batteryPassportId",
+    "original_manufacturer": "https://example.com/second-life#originalManufacturer",
+    "manufacturing_date": "https://example.com/second-life#manufacturingDate",
+    "battery_category": "https://example.com/second-life#batteryCategory",
+    "battery_chemistry": "https://example.com/second-life#batteryChemistry",
+
+    "rated_capacity_wh": "https://example.com/second-life#ratedCapacityWh",
+    "nominal_voltage_v": "https://example.com/second-life#nominalVoltageV",
+
+    "remaining_capacity_percent": "https://example.com/second-life#remainingCapacityPercent",
+    "remaining_usable_energy_wh": "https://example.com/second-life#remainingUsableEnergyWh",
+    "capacity_fade_percent": "https://example.com/second-life#capacityFadePercent",
+    "remaining_power_capability_w": "https://example.com/second-life#remainingPowerCapabilityW",
+
+    "number_of_cycles": "https://example.com/second-life#numberOfCycles",
+    "energy_throughput_kwh": "https://example.com/second-life#energyThroughputKwh",
+    "deep_discharge_events": "https://example.com/second-life#deepDischargeEvents",
+    "overcharge_events": "https://example.com/second-life#overchargeEvents",
+
+    "state_of_charge_percent": "https://example.com/second-life#stateOfChargePercent",
+    "round_trip_efficiency_percent": "https://example.com/second-life#roundTripEfficiencyPercent",
+
+    "internal_resistance_mohm": "https://example.com/second-life#internalResistanceMohm",
+    "max_permitted_power_w": "https://example.com/second-life#maxPermittedPowerW",
+    "max_voltage_v": "https://example.com/second-life#maxVoltageV",
+    "min_voltage_v": "https://example.com/second-life#minVoltageV",
+
+    "temperature_range_c": "https://example.com/second-life#temperatureRangeC",
+    "time_in_extreme_temperatures_hours": "https://example.com/second-life#timeInExtremeTemperaturesHours",
+
+    "safety_incidents": "https://example.com/second-life#safetyIncidents",
+    "safety_instructions": "https://example.com/second-life#safetyInstructions",
+
+    "second_life_status": "https://example.com/second-life#secondLifeStatus",
+    "recommended_second_life_use": "https://example.com/second-life#recommendedSecondLifeUse",
+    "assessment_date": "https://example.com/second-life#assessmentDate",
+    "assessed_by": "https://example.com/second-life#assessedBy"
+  }
+}
