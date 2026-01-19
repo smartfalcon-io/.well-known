@@ -1,0 +1,189 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    
+    "BatteryServiceEventCredential": {
+      "@id": "https://smartfalcon.io/credentials#BatteryServiceEventCredential",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        
+        "eventType": {
+          "@id": "https://smartfalcon.io/vocab#eventType",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "state_of_health": {
+          "@id": "https://smartfalcon.io/vocab#stateOfHealth",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "testing_method": {
+          "@id": "https://smartfalcon.io/vocab#testingMethod",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "remaining_capacity": {
+          "@id": "https://smartfalcon.io/vocab#remainingCapacity",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "voltage": {
+          "@id": "https://smartfalcon.io/vocab#voltage",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "current_internal_resistance_on_battery_pack_level": {
+          "@id": "https://smartfalcon.io/vocab#internalResistance",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "temperature": {
+          "@id": "https://smartfalcon.io/vocab#temperature",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "serviceDate": {
+          "@id": "https://smartfalcon.io/vocab#serviceDate",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        
+        "serviceType": {
+          "@id": "https://smartfalcon.io/vocab#serviceType",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "serviceCenterName": {
+          "@id": "https://smartfalcon.io/vocab#serviceCenterName",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "serviceCenterId": {
+          "@id": "https://smartfalcon.io/vocab#serviceCenterId",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "technicianName": {
+          "@id": "https://smartfalcon.io/vocab#technicianName",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "technicianLicense": {
+          "@id": "https://smartfalcon.io/vocab#technicianLicense",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "safetyStatus": {
+          "@id": "https://smartfalcon.io/vocab#safetyStatus",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "recommendation": {
+          "@id": "https://smartfalcon.io/vocab#recommendation",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "updatedBy": {
+          "@id": "https://smartfalcon.io/vocab#updatedBy",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "timestamp": {
+          "@id": "https://smartfalcon.io/vocab#timestamp",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        
+        "service_notes": {
+          "@id": "https://smartfalcon.io/vocab#serviceNotes",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "number_of_full_charge_discharge_cycles": {
+          "@id": "https://smartfalcon.io/vocab#cycleCount",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        
+        "total_distance_traveled": {
+          "@id": "https://smartfalcon.io/vocab#totalDistance",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "cell_voltage_delta": {
+          "@id": "https://smartfalcon.io/vocab#cellVoltageDelta",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "bms_software_version": {
+          "@id": "https://smartfalcon.io/vocab#bmsVersion",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "safety_notes": {
+          "@id": "https://smartfalcon.io/vocab#safetyNotes",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "ais_compliance_status": {
+          "@id": "https://smartfalcon.io/vocab#aisCompliance",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "bwm_compliance_status": {
+          "@id": "https://smartfalcon.io/vocab#bwmCompliance",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "service_certificate_number": {
+          "@id": "https://smartfalcon.io/vocab#certificateNumber",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "next_scheduled_service_date": {
+          "@id": "https://smartfalcon.io/vocab#nextServiceDate",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        
+        "warranty_status": {
+          "@id": "https://smartfalcon.io/vocab#warrantyStatus",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "warranty_claim_reference": {
+          "@id": "https://smartfalcon.io/vocab#warrantyClaim",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "warranty_notes": {
+          "@id": "https://smartfalcon.io/vocab#warrantyNotes",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        
+        "remaining_power_capability": {
+          "@id": "https://smartfalcon.io/vocab#remainingPowerCapability",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "state_of_certified_energy_soce": {
+          "@id": "https://smartfalcon.io/vocab#stateOfCertifiedEnergy",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "remaining_round_trip_energy_efficiency": {
+          "@id": "https://smartfalcon.io/vocab#roundTripEfficiency",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "capacity_fade": {
+          "@id": "https://smartfalcon.io/vocab#capacityFade",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        
+        "power_capability_fade": {
+          "@id": "https://smartfalcon.io/vocab#powerCapabilityFade",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      }
+    }
+  }
+}
