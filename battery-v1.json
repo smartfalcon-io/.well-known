@@ -5,27 +5,22 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "bp": "https://example.com/contexts/battery-passport#",
 
-    /* ───────── Battery Manufacturer Identifier (BMI) ───────── */
     "country_code": "bp:countryCode",
     "manufacturer_identifier": "bp:manufacturerIdentifier",
-    "battery_passport_identification": "bp:batteryPassportIdentification"
+    "battery_passport_identification": "bp:batteryPassportIdentification",
 
-
-    /* ───────── Battery Descriptor Section (BDS) ───────── */
-    "battery_capacity": { "@id": "bp:batteryCapacity", "@type": "xsd:decimal" },
+    "battery_capacity": { "@id": "bp:batteryCapacity", "@type": "xsd:string" },
     "battery_chemistry": "bp:batteryChemistry",
-    "nominal_voltage": { "@id": "bp:nominalVoltage", "@type": "xsd:decimal" },
+    "nominal_voltage": { "@id": "bp:nominalVoltage", "@type": "xsd:string" },
     "cell_origin": "bp:cellOrigin",
     "extinguisher_class": "bp:extinguisherClass",
 
-    /* ───────── Battery Identifier (BI) ───────── */
-    "date_of_manufacturing": { "@id": "bp:dateOfManufacturing", "@type": "xsd:date" },
+    "date_of_manufacturing": { "@id": "bp:dateOfManufacturing", "@type": "xsd:string" },
     "factory_code": "bp:factoryCode",
     "sequential_production_number": "bp:sequentialProductionNumber",
     "tac_number": "bp:tacNumber",
     "unique_serial_number": "bp:uniqueSerialNumber",
 
-    /* ───────── Technical Characteristics ───────── */
     "number_of_cells": { "@id": "bp:numberOfCells", "@type": "xsd:integer" },
     "internal_resistance": { "@id": "bp:internalResistance", "@type": "xsd:decimal" },
     "battery_weight": { "@id": "bp:batteryWeight", "@type": "xsd:decimal" },
@@ -47,7 +42,6 @@
     "circularity_method": "bp:circularityMethod",
     "recyclability": "bp:recyclability",
 
-    /* ───────── Battery Material Composition Section (BMCS) ───────── */
     "material_anode": "bp:materialAnode",
     "material_cathode": "bp:materialCathode",
     "material_electrolyte": "bp:materialElectrolyte",
@@ -61,7 +55,6 @@
     "material_3_content": { "@id": "bp:material3Content", "@type": "xsd:decimal" },
     "material_4_content": { "@id": "bp:material4Content", "@type": "xsd:decimal" },
 
-    /* ───────── Battery Carbon Footprint (BCF) ───────── */
     "total_bcf_scaled": { "@id": "bp:totalBatteryCarbonFootprint", "@type": "xsd:decimal" },
     "bcf_raw_material_stage": { "@id": "bp:bcfRawMaterialStage", "@type": "xsd:decimal" },
     "bcf_manufacturing_stage": { "@id": "bp:bcfManufacturingStage", "@type": "xsd:decimal" },
@@ -72,7 +65,6 @@
     "qr_code": "bp:qrCode",
     "server_reference": "bp:serverReference",
 
-    /* ───────── Battery Dynamic Data (BDD) ───────── */
     "battery_category": "bp:batteryCategory",
     "battery_status": "bp:batteryStatus",
     "state_of_health": { "@id": "bp:stateOfHealth", "@type": "xsd:decimal" },
