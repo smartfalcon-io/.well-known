@@ -77,19 +77,9 @@
 
     "battery_model":                   "bp:batteryModel",
 
-    "battery_capacity_kWh":              { "@id": "bp:batteryCapacity",      "@type": "xsd:decimal" },
-    "nominal_voltage_V":                 { "@id": "bp:nominalVoltage",       "@type": "xsd:decimal" },
-    "internal_resistance_mOhm":          { "@id": "bp:internalResistance",   "@type": "xsd:decimal" },
-    "battery_weight_kg":                 { "@id": "bp:batteryWeight",        "@type": "xsd:decimal" },
-    "battery_warranty_years":            { "@id": "bp:batteryWarranty",      "@type": "xsd:decimal" },
-    "power_capability_80_soc_kW":        { "@id": "bp:powerCapability80SoC", "@type": "xsd:decimal" },
-    "power_capability_20_soc_kW":        { "@id": "bp:powerCapability20SoC", "@type": "xsd:decimal" },
-    "usable_capacity_80_20_percent_kWh": { "@id": "bp:usableCapacity80To20", "@type": "xsd:decimal" },
-    "recyclability_percent":             { "@id": "bp:recyclability",        "@type": "xsd:decimal" },
-    "material_1_content_percent":        { "@id": "bp:material1Content",     "@type": "xsd:decimal" },
-    "material_2_content_percent":        { "@id": "bp:material2Content",     "@type": "xsd:decimal" },
-    "material_3_content_percent":        { "@id": "bp:material3Content",     "@type": "xsd:decimal" },
-    "material_4_content_percent":        { "@id": "bp:material4Content",     "@type": "xsd:decimal" },
-    "state_of_health_percent":           { "@id": "bp:stateOfHealth",        "@type": "xsd:decimal" }
+    "battery_capacity_kWh":            { "@id": "bp:batteryCapacity",      "@type": "xsd:decimal" },
+    "nominal_voltage_V":               { "@id": "bp:nominalVoltage",       "@type": "xsd:decimal" },
+    "battery_warranty_years":          { "@id": "bp:batteryWarranty",      "@type": "xsd:decimal" },
+    "recyclability_percent":           { "@id": "bp:recyclability",        "@type": "xsd:decimal" }
   }
 }
